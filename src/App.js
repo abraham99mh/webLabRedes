@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Acerca from './components/Acerca';
+import Navbar from './components/Navbar';
+import Tareas from './components/Tareas';
+import Lab from './components/Lab';
+import Contacto from './components/Contacto';
+import { Route, Routes } from 'react-router-dom'
+
+import Tarea1Ramon from './tareas/Tarea1Ramon';
+
+const Index = () => {
+  return (
+    <div className='container-fluid px-0'>
+      <img className='img-fluid w-100' src="bg.jpg" alt="IBERO"></img>
+      <div className='container'>
+        <h1 className='pt-3'>Inicio</h1>
+      </div>
+    </div>
+  );
+}
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Index />} />
+        <Route path='/acerca-de-mi' element={<Acerca />} />
+        <Route path='/tareas' element={<Tareas />} />
+        <Route path='/laboratorio' element={<Lab />} />
+        <Route path='/contacto' element={<Contacto />} />
+
+        {/* Tareas */}
+        <Route path='/tareas/1/Ramon' element={<Tarea1Ramon />} />
+      </Routes>
+    </>
   );
 }
 
