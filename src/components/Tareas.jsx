@@ -20,7 +20,7 @@ const Tareas = () => {
                         <tr>
                             <th scope="row">1</th>
                             <td>Karime</td>
-                            <td><a className='btn btn-danger' href="indexKarime.html">Tarea</a></td>
+                            <td><a className='btn btn-danger' href="tarea1Karime/index.html">Tarea</a></td>
                         </tr> 
                         <TableItem num="2" alumno="Ramón" link="/tareas/2/Ramon"/>
                         <tr>
