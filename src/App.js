@@ -7,6 +7,7 @@ import Contacto from './components/Contacto';
 import { Route, Routes } from 'react-router-dom'
 
 import Tarea1Ramon from './tareas/Tarea1Ramon';
+import Tarea2Ramon from './tareas/Tarea2Ramon';
 
 const Index = () => {
   return (
@@ -34,6 +35,7 @@ function App() {
 
         {/* Tareas */}
         <Route path='/tareas/1/Ramon' element={<Tarea1Ramon />} />
+        <Route path='/tareas/2/Ramon' element={<Tarea2Ramon />} />
       </Routes>
     </>
   );

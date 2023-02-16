@@ -1,0 +1,184 @@
+.estilo1 {
+    color: blue;
+    text-align: center;
+    background-color: red;
+
+}
+.estilo2 {
+    color: greenyellow;
+    background-color:yellow;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.estilo3 {
+    color: rgb(red, green, blue);
+
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.estilo3 {
+    color: aqua;
+
+    font-size: 100px;
+    font-size: large;
+
+}
+.estilo4 {
+    color: brown;
+
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.estilo5 {
+    color: darkmagenta;
+
+    font-size: 70px;
+    text-align: end;
+
+}
+.estilo6 {
+    color: darkred;
+    font-size: 70px;
+    text-overflow: ellipsis;
+
+}
+.estilo7 {
+
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-justify: auto;
+
+}
+.estilo8 {
+    color: black;
+    font-size: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+
+}
+.estilo9 {
+    
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.estilo10 {
+   background-color: springgreen;
+
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.estilo11 {
+    color: chocolate;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.estilo12 {
+    color: crimson;
+    align-content: center;
+    font-size: 60px;
+    ;
+
+}
+.estilo13 {
+    color: blueviolet;
+    text-decoration: dashed;
+    text-align: initial;
+
+}
+.estilo14 {
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: cadetblue;
+
+}
+.estilo15 {
+    color: cornsilk;
+
+    font-size: 30px;
+    text-shadow: 0ch;
+}
+.estilo16 {
+    border-color: aquamarine;
+
+    font-size: 10px;
+    text-shadow: 50ch;
+}
+.estilo17 {
+    color: darkmagenta;
+
+    text-decoration: dashed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.estilo18 {
+    color: darkorange;
+
+    font-size: 60px;
+    text-shadow: 70ch;
+    text-justify: distribute;
+}
+.estilo19 {
+    color:black;
+    text-align: center;
+    background: position 50px;
+}
+.estilo20 {
+    color: mediumblue;
+
+    font-size: 5px;
+    text-decoration: double;
+    text-align: start;
+}
+.estilo21 {
+    text-overflow: ellipsis;
+    text-decoration-line: overline;
+    text-align: center;
+   
+}
+.estilo22 {
+    color: orange;
+    text-decoration: solid;
+    text-align: justify;
+}
+.estilo23 {
+    color: navy;
+    text-transform: initial;
+    text-align: start;
+}
+h1{
+    text-align: center;
+    background-color: cadetblue;
+}
+h2{
+    text-align: left;
+    background-color: darkgreen;
+}
+h3{
+    text-align: right;
+    background-color: darkgreen;
+}
+.fondo {
+background-color: aqua;
+}
+body{
+    background-image: url(/imagenes/logo1.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.pagina {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.footer{
+    text-align: center;
+    background-color: red;
+    color: black;
+
+}
