@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.2.3 (Linux)"/>
+	<meta name="author" content="ROMERO SALAZAR RAMON ALBERTO"/>
+	<meta name="created" content="2023-02-14T01:35:00"/>
+	<meta name="changedby" content="ROMERO SALAZAR RAMON ALBERTO"/>
+	<meta name="changed" content="2023-02-23T02:39:00"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin-left: 1.18in; margin-right: 1.18in; margin-top: 0.98in; margin-bottom: 0.98in }
+		p { line-height: 115%; text-align: left; orphans: 2; widows: 2; margin-bottom: 0.1in; direction: ltr; background: transparent }
+	</style>
+</head>
+<body lang="es-MX" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 108%; margin-bottom: 0.11in">
+<h5 size="3" style="font-size: 12pt"><b>Modelo OSI </b></h5>
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Modelo de
+referencias OSI (Interconexión de Sistemas Abiertos)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Principios.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Crear capa en
+donde se requiera nivel diferente de abstracción 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Cada capa debe
+tener una función definida 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Elegir los
+limites de las capas que minimice el flujo de información a través
+de las interfaces 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">La cantidad de
+capas debe ser suficientes para no agrupar funciones distintas en la
+misma capa y lo  bastante pequeña para que sea manejable la
+arquitectura 
+</p>
+<ol>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa física
+		</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Se Transmisión
+de bits puros a través de un canal de transmisión, el diseño esta
+relacionado con asegurarse que cuando un lado envíe un bit 1 el otro
+lado reciba un bit 1.</p>
+<ol start="2">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	enlace de datos 
+	</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Transformar un
+medio de transmisión puro en una línea libre de errores de
+trasmisión.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">El emisor divide
+los datos de entrada en tramas de datos que transmite en forma
+secuencial 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Para confirmar la
+recepción de correcta de cada trama el receptor devuelve una trama
+de confirmación de recepción.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Control de acceso
+al medio: resuelve el problema de conyrolar el acceso al canal
+compartido.</p>
+<ol start="3">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de red</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Controla la
+operación de la subred. Determina cómo se encaminan los paquetes
+desde el origen hasta el destino.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Las rutas se
+pueden basar en tablas estáticas que se “codifican” en la red y
+rara vez cambian, aunque es más común que se actualicen de manera
+automática para evitar las fallas en los componentes.</p>
+<ol start="4">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	transporte</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Su función es
+aceptar datos de la capa superior, dividirlos en unidades más
+pequeñas si es necesario, pasar estos datos a la capa de red y
+asegurar que todas las piezas lleguen correctamente al otro extremo.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Controla las
+comunicaciones de extremo a extremo entre dos dispositivos 
+</p>
+<ol start="5">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	sesión</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Permite al
+usuario establecer conexión entre diferentes máquinas, por ejemplo.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">El control de
+diálogos, el manejo de tokens para evitar que dos partes realicen la
+misma acción critica simultáneamente, la sincronización usa puntos
+ de  referencia  en  las  transmisiones  extensas  para  reanudar 
+desde  el  último  punto de referencia en caso de una interrupción.</p>
+<ol start="6">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	presentación</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Se enfoca en la
+sintaxis y la semántica de la información transmitida. Para hacer
+posible  la  comunicación  entre  computadoras  con  distintas 
+representaciones  internas  de  datos, en otras palabras prepara los
+datos para su consumo por las aplicaciones.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Es la responsable
+de traducir el cifrado y la compresión de los datos. </p>
+<ol start="7">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	aplicación</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Es la única capa
+que interactúa directamente con los datos del usuario. permitir a
+los usuarios ejecutar acciones en sus propias aplicaciones y permite
+la comunicación entre el resto de capas inferiores.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><h5 size="3" style="font-size: 12pt"><b>Modelo
+TCP </b></h5>
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Siglas de
+Transmission Control Protocol/Internet Protocol (Protocolo de control
+de transmisión/Protocolo de Internet).</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Identificación
+del grupo de protocolos de red para la transferencia de datos en
+redes, entre equipos informáticos e internet.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">TCP es el
+Protocolo de Control de Transmisión que permite establecer una
+conexión y el intercambio de datos entre dos anfitriones. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">IP o protocolo de
+internet, utiliza direcciones series de cuatro octetos con formato de
+punto decimal. 
+</p>
+<ol>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	enlace</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Es la primera
+capa del modelo y ofrece la posibilidad de acceso físico a la red 
+</p>
+<ol start="2">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de red
+	o Internet</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Proporciona el
+paquete de datos y administra las direcciones IP.</p>
+<ol start="3">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	Transporte</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Nos permite
+conocer el estado de la transmisión, así como los datos de
+enrutamiento para asociar un tipo de aplicación con un tipo de dato.</p>
+<ol start="4">
+	<li><p style="line-height: 108%; margin-bottom: 0.11in">Capa de
+	Aplicación</p>
+</ol>
+<p style="line-height: 108%; margin-bottom: 0.11in">Es el grupo de
+aplicaciones que requiere comunicación de red, es con lo que se
+relaciona el usuario.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<center>
+	<table width="404" cellpadding="7" cellspacing="0">
+		<col width="187"/>
+
+		<col width="187"/>
+
+		<tr valign="top">
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Modelo
+				Osi</font></font></p>
+			</td>
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Modelo
+				TCp/IP</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">La
+				capa de aplicación permite el acceso a los usuarios y a los
+				servicios de información.</font></font></p>
+			</td>
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">La
+				capa de aplicación se encuentra la lógica para posibilitar las
+				diferentes aplicaciones de usuario.</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Distingue
+				de forma clara servicios e interfaces </font></font>
+				</p>
+			</td>
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Combina
+				las funciones de la capa presentación y de sesión en la capa de
+				aplicación.</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Son
+				capas independientes </font></font>
+				</p>
+			</td>
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Combina
+				la capa de enlace y capa física del modelo OSI </font></font>
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Creado
+				de manera posterior a los protocolos por lo que se acopla a ellos
+				</font></font>
+				</p>
+			</td>
+			<td width="187" style="border: 1px solid #000000; padding: 0in 0.08in"><p align="left" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">Definido
+				antes de los protocolos por lo tanto algunas funcionalidades
+				fallan.</font></font></p>
+			</td>
+		</tr>
+	</table>
+</center>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+</body>
+</html>

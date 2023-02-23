@@ -37,6 +37,16 @@ const Tareas = () => {
                             <th scope="row">3</th>
                             <td>Karime</td>
                             <td><a className='btn btn-danger' href="tarea3Karime/index.html">Tarea</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Ambos</td>
+                            <td><a className='btn btn-danger' href="tarea4/Tarea4.html">Tarea</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Ambos</td>
+                            <td><a className='btn btn-danger' href="tarea5/index.html">Tarea</a></td>
                         </tr> 
                     </tbody>
                 </table>
