@@ -16,16 +16,13 @@ const Navbar = () => {
                             <NavLink className='nav-link' to="/">Inicio</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className='nav-link' to="/acerca-de-mi">Acerca de mi</NavLink>
-                        </li>
-                        <li className="nav-item">
                             <NavLink className='nav-link' to="/tareas">Tareas Redes</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className='nav-link' to="/laboratorio">Laboratorio</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className='nav-link' to="/contacto">Contacto</NavLink>
+                            <NavLink className='nav-link' to="/proyecto-final">Proyecto final</NavLink>
                         </li>
                     </ul>
                 </div>

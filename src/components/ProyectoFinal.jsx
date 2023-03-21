@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Acerca = () => {
+const ProyectoFinal = () => {
     return ( 
         <div className='container'>
-            Acerca de mi
+            ProyectoFinal
         </div>
     );
 }
  
-export default Acerca;
+export default ProyectoFinal;

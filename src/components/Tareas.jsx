@@ -6,7 +6,7 @@ const Tareas = () => {
     return ( 
         <div className='container'>
             <h2 className='pt-3'>Tareas</h2>
-            <div>
+            <div className='card bg-dark'>
                 <table className="table table-dark table-striped">
                     <thead>
                         <tr>
