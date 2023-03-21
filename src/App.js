@@ -8,14 +8,15 @@ import { Route, Routes } from 'react-router-dom'
 import Tarea1Ramon from './tareas/Tarea1Ramon';
 import Tarea2Ramon from './tareas/Tarea2Ramon';
 
-const acercaAbraham = "Mi nombre es Abraham, actualmente estoy estudiando en la Universidad Ibero Puebla la carrera de Ingeniería en Sistemas Computacionales. Soy una persona apasionada por la programación, me encanta pasar horas frente a la computadora creando nuevos proyectos y resolviendo problemas. Uno de mis hobbies favoritos son los videojuegos, me gusta jugar en línea con amigos y conocer nuevas personas a través de esta actividad. Además, también me gusta el futbol y disfruto mucho ver partidos y jugar con amigos en mi tiempo libre. Estoy enfocado en continuar aprendiendo y mejorando mis habilidades en la programación para poder crear soluciones innovadoras en el futuro."
+const acercaAbraham = "Mi nombre es Abraham, actualmente estoy estudiando en la Universidad Ibero Puebla la carrera de Ingeniería en Sistemas Computacionales. Me gusta la programación, pasando horas frente a la computadora creando nuevos proyectos y resolviendo problemas. Uno de mis hobbies favoritos son los videojuegos, me gusta jugar en línea con amigos y además, también me gusta el futbol y disfruto mucho ver partidos."
+const acercaRamon = "Mi nombre es Ramón y actualmente estudio Ingeniería Electrónica en la misma universidad que tú, la Universidad Ibero Puebla. Me apasiona todo lo relacionado con la electrónica y estoy emocionado de aprender todo lo que pueda sobre esta carrera. Además, uno de mis pasatiempos favoritos es comer tacos, siempre estoy en busca de nuevos lugares para probar diferentes tipos de tacos."
 
 const Acerca = (props) => {
   return (
     <div className="card text-bg-dark col-12 col-md-11 col-lg-10 px-0 mb-4">
       <div className="row g-0">
         <div className="col-md-9 p-lg-4 p-3">
-          <h2>{props.name}</h2>
+          <h4>{props.name}</h4>
           <p>{props.about}</p>
         </div>
         <div className="col-md-3">
@@ -43,7 +44,7 @@ const Index = () => {
       <div className='container'>
         <div className='row my-3 mx-1  mx-md-0 my-md-5 justify-content-center'>
           <Acerca name="Abraham" about={acercaAbraham} img="abraham.jpg" />
-          <Acerca name="Ramón" about="Lorem ipsum dolor..." img="ramon.jpg" />
+          <Acerca name="Ramón" about={acercaRamon} img="ramon.jpg" />
         </div>
       </div>
     </div>
