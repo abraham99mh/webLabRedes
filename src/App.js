@@ -16,7 +16,7 @@ const Acerca = (props) => {
     <div className="card text-bg-dark col-12 col-md-11 col-lg-10 px-0 mb-4">
       <div className="row g-0">
         <div className="col-md-9 p-lg-4 p-3">
-          <h4>{props.name}</h4>
+          <h4 className='text-xl mb-2'>{props.name}</h4>
           <p>{props.about}</p>
         </div>
         <div className="col-md-3">
@@ -33,11 +33,11 @@ const Acerca = (props) => {
 }
 const Index = () => {
   return (
-    <div className='container-fluid px-0'>
+    <div className='container-fluid px-0 pb-1 bg-slate-600'>
       <div className='position-relative'>
         <img className='img-fluid w-100' src="bg.jpg" alt="IBERO"></img>
         <div className="position-absolute top-50 start-50 translate-middle h-100 w-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} ></div>
-        <div className='position-absolute top-50 start-50 translate-middle h1'>
+        <div className='position-absolute top-50 start-50 translate-middle h1 text-white'>
           Redes Digitales
         </div>
       </div>

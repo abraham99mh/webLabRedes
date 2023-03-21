@@ -7,7 +7,7 @@ const TableItem = (props) => {
     <tr>
         <th scope="row">{props.num}</th>
         <td>{props.alumno}</td>
-        <td><Link className='btn btn-danger' to={props.link}>Tarea</Link></td>
+        <td><Link className='btn btn-error lg:btn-sm' to={props.link}>Tarea</Link></td>
     </tr>     
     );
 }
