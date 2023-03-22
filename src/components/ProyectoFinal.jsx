@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProyectoFinal = () => {
     return ( 
-        <div className='container'>
-            ProyectoFinal
+        <div className='mx-96'>
+            Proyecto final
         </div>
     );
 }
