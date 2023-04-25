@@ -5,7 +5,7 @@ import React from 'react';
             <h2 className='pt-3 text-3xl'>Prácticas Laboratorio</h2>
             <h5 className='pt-3 text-lg'>Luis Abraham Meléndez Hernández</h5>
             <h5 className='py-3 mb-4 text-lg'>Ramón Alberto Romero Salazar</h5>
-            <div className='mx-20'>
+            <div className='lg:mx-20'>
                 <table className="table table-dark table-striped">
                     <thead>
                         <tr>

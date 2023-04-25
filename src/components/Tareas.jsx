@@ -6,7 +6,7 @@ const Tareas = () => {
     return ( 
         <div className='container bg-slate-600 min-w-full px-12 pb-10'>
             <h1 className='pt-3 text-white text-3xl mb-4'>Tareas</h1>
-            <div className='mx-20'>
+            <div className='lg:mx-20'>
                 <table className="table table-dark table-striped">
                     <thead>
                         <tr>
