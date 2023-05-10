@@ -35,9 +35,9 @@ const InicioDeSesion = (session) => {
         <div
           className={`absolute left-1/2 transform -translate-x-1/2 z-50 transition-opacity duration-500 mt-12 ${opacity}`}
         >
-          <div className="alert duration-200 bg-danger py-0 px-4">
-            <div className="p-3 text-md">
-              <VscChromeClose className="text-white text-xl mr-2" />
+          <div className="alert duration-200 bg-danger py-0 md:px-4">
+            <div className="p-2 md:p-3 text-md">
+              <VscChromeClose className="text-white text-6xl md:text-xl mr-2" />
               <span className="text-white font-semibold">
                 Usuario o contraseña incorrectos
               </span>
@@ -46,8 +46,11 @@ const InicioDeSesion = (session) => {
         </div>
       )}
       {/*login */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 z-50 mt-14 font-bold  text-white text-5xl">
+        DASBOARD
+      </div>
       <div className="bg-slate-800 py-12 text-white flex justify-center items-center min-h-screen">
-        <div className="card bg-slate-700 shadow-xl w-96 py-3">
+        <div className="card bg-slate-700 shadow-xl w-96 py-3 mx-4 md:mx-0">
           <div className="card-body items-center text-center">
             <div className="text-4xl font-bold mb-4">Inicio de sesión</div>
             <form className="w-full px-3">

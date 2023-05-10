@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import InicioDeSesion from "./InicioDeSesion";
-import { collection, doc, onSnapshot } from "firebase/firestore";
+// import { collection, doc, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase";
+import { ref, onValue } from "firebase/database";
 
 //Clase para las cards
 let cardClass = "card p-8 bg-slate-700 col-span-2 md:col-span-1";
@@ -9,18 +10,28 @@ let cardClass = "card p-8 bg-slate-700 col-span-2 md:col-span-1";
 //Componente del dashboard
 const Dashboard = () => {
   const [data, setData] = useState([]);
+  const [presion, setPresion] = useState(0);
 
-  const dbRef = collection(db, "dashboard");
+  const [state, setState] = useState(false);
+
+  const dbRef = ref(db);
 
   useEffect(() => {
-    const unsub = onSnapshot(doc(dbRef, "data"), (doc) => {
-      setTimeout(() => {
-        setData(doc.data());
-        console.log("data updated");
-      }, 5000);
+    onValue(dbRef, (snapshot) => {
+      const resp = snapshot.val();
+      setData(resp);
+      const p = data.presion;
+      const pres = p ? p.toFixed(2) : null;
+      setPresion(pres);
     });
-    return unsub;
-  }, [dbRef]);
+    console.log("actualizado");
+  }, [data.presion, dbRef, state]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setState(!state);
+    }, 5000);
+  }, [state]);
 
   return (
     <div className="bg-slate-800 py-12 text-white min-h-screen">
@@ -52,7 +63,7 @@ const Dashboard = () => {
             Presión Atmosférica
             <div className="flex justify-center mt-2">
               <div className="rounded-md h-52 w-56 flex justify-center items-center gradient-animation2 squares hover:scale-110 ease-out duration-300">
-                <span className="pl-3 text-6xl">{data.presion} hPa</span>
+                <span className="pl-6 text-5xl">{presion} hPa</span>
                 <div></div>
                 <div></div>
                 <div></div>
