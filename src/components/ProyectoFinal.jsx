@@ -14,7 +14,10 @@ const Dashboard = () => {
 
   useEffect(() => {
     const unsub = onSnapshot(doc(dbRef, "data"), (doc) => {
-      setData(doc.data());
+      setTimeout(() => {
+        setData(doc.data());
+        console.log("data updated");
+      }, 5000);
     });
     return unsub;
   }, [dbRef]);
