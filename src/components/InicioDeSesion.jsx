@@ -46,7 +46,7 @@ const InicioDeSesion = (session) => {
         </div>
       )}
       {/*login */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 z-50 mt-14 font-bold  text-white text-5xl">
+      <div className="absolute left-1/2 transform -translate-x-1/2 mt-14 font-bold  text-white text-5xl">
         DASBOARD
       </div>
       <div className="bg-slate-800 py-12 text-white flex justify-center items-center min-h-screen">

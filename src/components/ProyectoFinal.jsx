@@ -3,14 +3,16 @@ import InicioDeSesion from "./InicioDeSesion";
 // import { collection, doc, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase";
 import { ref, onValue } from "firebase/database";
-
-//Clase para las cards
-let cardClass = "card p-8 bg-slate-700 col-span-2 md:col-span-1";
+import Esp from "./Esp";
 
 //Componente del dashboard
 const Dashboard = () => {
+  const [op, setOp] = useState(0);
+
   const [data, setData] = useState([]);
-  const [presion, setPresion] = useState(0);
+  const [data2, setData2] = useState([]);
+  const [data3, setData3] = useState([]);
+  const [data4, setData4] = useState([]);
 
   const [state, setState] = useState(false);
 
@@ -19,13 +21,38 @@ const Dashboard = () => {
   useEffect(() => {
     onValue(dbRef, (snapshot) => {
       const resp = snapshot.val();
-      setData(resp);
-      const p = data.presion;
-      const pres = p ? p.toFixed(2) : null;
-      setPresion(pres);
+
+      const r1 = {
+        temperatura: resp.temperatura,
+        h_relativa: resp.h_relativa,
+        h_suelo: resp.h_suelo,
+        presion: resp.presion,
+      };
+      setData(r1);
+
+      const r2 = {
+        temperatura: resp.temperatura2,
+        h_relativa: resp.h_relativa2,
+        h_suelo: resp.h_suelo2,
+        presion: resp.presion2,
+      };
+      setData2(r2);
+      const r3 = {
+        temperatura: resp.temperatura3,
+        h_relativa: resp.h_relativa3,
+        h_suelo: resp.h_suelo3,
+        presion: resp.presion3,
+      };
+      setData3(r3);
+      const r4 = {
+        temperatura: resp.temperatura4,
+        h_relativa: resp.h_relativa4,
+        h_suelo: resp.h_suelo4,
+        presion: resp.presion4,
+      };
+      setData4(r4);
     });
-    console.log("actualizado");
-  }, [data.presion, dbRef, state]);
+  }, [data.presion, data.presion2, data.presion3, data.presion4, dbRef, state]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -34,91 +61,53 @@ const Dashboard = () => {
   }, [state]);
 
   return (
-    <div className="bg-slate-800 py-12 text-white min-h-screen">
-      <span className="flex justify-center font-bold text-5xl">DASHBOARD</span>
-      <div className="grid grid-cols-2 gap-6 md:gap-11 mx-auto px-6 sm:px-28 mt-10">
-        {/* Card de temperatura */}
-        <div className={cardClass}>
-          <div className="text-2xl font-extrabold">
-            Temperatura
-            <div className="flex justify-center mt-2">
-              <div className="rounded-md h-52 w-56 flex justify-center items-center gradient-animation circles hover:scale-110 ease-out duration-300">
-                <span className="pl-3 text-6xl">{data.temperatura}°</span>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card de presión atmosférica  */}
-        <div className={cardClass}>
-          <div className="text-2xl font-extrabold">
-            Presión Atmosférica
-            <div className="flex justify-center mt-2">
-              <div className="rounded-md h-52 w-56 flex justify-center items-center gradient-animation2 squares hover:scale-110 ease-out duration-300">
-                <span className="pl-6 text-5xl">{presion} hPa</span>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card de humedad relativa  */}
-        <div className={cardClass}>
-          <div className="text-2xl font-extrabold">
-            Humedad Relativa
-            <div className="flex justify-center mt-2">
-              <div className="rounded-md h-52 w-56 flex justify-center items-center gradient-animation3 squares hover:scale-110 ease-out duration-300">
-                <span className="pl-3 text-6xl">{data.h_relativa}%</span>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Card de humedad del suelo  */}
-        <div className={cardClass}>
-          <div className="text-2xl font-extrabold">
-            Humedad del suelo
-            <div className="flex justify-center mt-2">
-              <div className="rounded-md h-52 w-56 flex justify-center items-center gradient-animation4 circles hover:scale-110 ease-out duration-300">
-                <span className="pl-3 text-6xl">{data.h_suelo}%</span>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <>
+      <div className="bg-slate-800 py-12 text-white min-h-screen">
+        {op === 0 ? (
+          <Esp data={data} />
+        ) : op === 1 ? (
+          <Esp data={data2} />
+        ) : op === 2 ? (
+          <Esp data={data3} />
+        ) : op === 3 ? (
+          <Esp data={data4} />
+        ) : null}
       </div>
-    </div>
+      <div className="btm-nav">
+        <button
+          className={`text-white text-2xl ${
+            op === 0 ? "active font-bold" : ""
+          }`}
+          onClick={() => setOp(0)}
+        >
+          A
+        </button>
+        <button
+          className={`text-white text-2xl ${
+            op === 1 ? "active font-bold" : ""
+          }`}
+          onClick={() => setOp(1)}
+        >
+          B
+        </button>
+        <button
+          className={`text-white text-2xl ${
+            op === 2 ? "active font-bold" : ""
+          }`}
+          onClick={() => setOp(2)}
+        >
+          C
+        </button>
+        <button
+          className={`text-white text-2xl ${
+            op === 3 ? "active font-bold" : ""
+          }`}
+          onClick={() => setOp(3)}
+        >
+          D
+        </button>
+      </div>
+    </>
   );
 };
 
