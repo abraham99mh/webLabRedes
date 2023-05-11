@@ -150,7 +150,7 @@ const InicioDeSesion = (session) => {
       )}
       {/*login */}
       <div className="absolute left-1/2 transform -translate-x-1/2 mt-14 font-bold  text-white text-5xl">
-        DASBOARD
+        DASHBOARD
       </div>
       <div className="bg-slate-800 py-12 text-white flex justify-center items-center min-h-screen">
         <div className="card bg-slate-700 shadow-xl w-96 py-3 mx-4 md:mx-0">
