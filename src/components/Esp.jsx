@@ -10,7 +10,9 @@ const Esp = (props) => {
 
   return (
     <>
-      <span className="flex justify-center font-bold text-5xl">DASHBOARD</span>
+      <span className="flex justify-center font-bold text-5xl">
+        DASHBOARD - {props.type}
+      </span>
       <div className="grid grid-cols-2 gap-6 md:gap-11 mx-auto px-6 sm:px-28 mt-10 mb-10">
         {/* Card de temperatura */}
         <div className={cardClass}>

@@ -64,13 +64,13 @@ const Dashboard = () => {
     <>
       <div className="bg-slate-800 py-12 text-white min-h-screen">
         {op === 0 ? (
-          <Esp data={data} />
+          <Esp data={data} type={"A"} />
         ) : op === 1 ? (
-          <Esp data={data2} />
+          <Esp data={data2} type={"B"} />
         ) : op === 2 ? (
-          <Esp data={data3} />
+          <Esp data={data3} type={"C"} />
         ) : op === 3 ? (
-          <Esp data={data4} />
+          <Esp data={data4} type={"D"} />
         ) : null}
       </div>
       <div className="btm-nav">
