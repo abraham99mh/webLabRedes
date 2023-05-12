@@ -63,6 +63,14 @@ const Dashboard = () => {
   return (
     <>
       <div className="bg-slate-800 py-12 text-white min-h-screen">
+        <div className="fixed bottom-20 md:top-10 right-4 md:right-10 z-30">
+          <label
+            htmlFor="my-modal-4"
+            className="btn bg-slate-600 btn-lg btn-circle font-bold border-0 text-5xl drop-shadow-lg"
+          >
+            ?
+          </label>
+        </div>
         {op === 0 ? (
           <Esp data={data} type={"A"} />
         ) : op === 1 ? (
@@ -73,6 +81,23 @@ const Dashboard = () => {
           <Esp data={data4} type={"D"} />
         ) : null}
       </div>
+
+      <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+      <label htmlFor="my-modal-4" className="modal cursor-pointer">
+        <label className="modal-box w-full max-w-7xl" htmlFor="">
+          <div>
+            <iframe
+              title="Canva Presentation"
+              loading="lazy"
+              className="w-full aspect-video"
+              src="https://www.canva.com/design/DAFijtdjeic/view?embed"
+              allowFullScreen={true}
+              allow="fullscreen"
+            ></iframe>
+          </div>
+        </label>
+      </label>
+
       <div className="btm-nav">
         <button
           className={`text-white text-2xl ${
