@@ -121,6 +121,30 @@ const Tareas = () => {
             </tr>
           </tbody>
         </table>
+
+        <table className="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Hecha por</th>
+              <th scope="col">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td className="font-bold uppercase">Examen 1 - Ambos</td>
+              <td>
+                <a
+                  className="btn btn-warning lg:btn-sm"
+                  href="Examen redes digitales 2023.pdf"
+                >
+                  EXAMEN
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
