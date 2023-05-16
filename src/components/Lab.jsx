@@ -127,6 +127,17 @@ const Lab = () => {
                 </a>
               </td>
             </tr>
+            <tr>
+              <th scope="row">Páctica 8</th>
+              <td>
+                <a
+                  className="btn btn-error lg:btn-sm"
+                  href="practicas/karyme/PRACT8.docx"
+                >
+                  Descargar
+                </a>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
