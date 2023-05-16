@@ -113,7 +113,7 @@ const Tareas = () => {
               <td>
                 <a
                   className="btn btn-error lg:btn-sm"
-                  href="tarea8/Tarea8.html"
+                  href="tarea8/Tarea9.html"
                 >
                   Tarea
                 </a>
@@ -125,7 +125,7 @@ const Tareas = () => {
               <td>
                 <a
                   className="btn btn-error lg:btn-sm"
-                  href="tarea9/Tarea9.html"
+                  href="tarea9/Tarea8.html"
                 >
                   Tarea
                 </a>
