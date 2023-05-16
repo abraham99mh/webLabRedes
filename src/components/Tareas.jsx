@@ -108,6 +108,18 @@ const Tareas = () => {
               </td>
             </tr>
             <tr>
+              <th scope="row">8</th>
+              <td>Ambos</td>
+              <td>
+                <a
+                  className="btn btn-error lg:btn-sm"
+                  href="tarea8/Tarea8.html"
+                >
+                  Tarea
+                </a>
+              </td>
+            </tr>
+            <tr>
               <th scope="row">9</th>
               <td>Ambos</td>
               <td>
